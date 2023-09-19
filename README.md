@@ -63,13 +63,25 @@ If you are planning on using or working on the simulator at all, you will workin
     ```
     with `<branch-name>` being the name of the branch you want to create. Please title your branch in the following format: `firstname_lastname`. Notice that we used an underscore in the branch name. You should generally not include whitespace in branch names. 
 
+    Next we will `checkout`, or switch to the branch we just created. 
+    Type the following command into the terminal:
+    ```
+    git checkout <branch-name>
+    ```
+
 8. In the folder you will find the code for the README.md you are reading off of right now! You will also find a subdirectory called `persons`. Create a new .txt file in the `persons` directory named by the convention `Firstname_Lastname.txt`. 
 
-9. In the .txt file you just created, type your full name into the first line, and save. Then go back to your terminal and type the following command:
+9. In the .txt file you just created, type your full name into the first line, you major in the second, and anything else you would like to mention in the third (be nice!). Save the file. Then go back to your terminal and type the following command:
     ```
-    git add Firstname_Lastname.txt
+    git add .\persons\Firstname_Lastname.txt
+    (Windows)
+
+    or 
+
+    git add ./persons/Firstname_Lastname.txt
+    (UNIX)
     ```
-    with the Firstname and Lastname being your first and last name. This command will add the file you just created to the list of files that git is tracking.
+    with the Firstname and Lastname being your first and last name. This command will add the file you just created to the list of files that git is tracking. 
 
     To check this, you can type the following command into the terminal:
     ```
