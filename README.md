@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome the University at Buffalo IEEE Micromouse! This repository is a collection of resources to help you get started with the Micromouse project. If you have any questions, please reach out to [Eric Butcher](mailto:ericbutc@buffalo.edu). Please first got to the software section and download all the required software there. After you have downloaded the necessary software, please continue to the practicing git section and complete the steps laid out there. 
+Welcome the University at Buffalo IEEE Micromouse! This repository is a quick way to help you get started with the Micromouse project. If you have any questions, please reach out to [Eric Butcher](mailto:ericbutc@buffalo.edu). Please first got to the software section and download all the required software there. After you have downloaded the necessary software, please continue to the practicing git section and complete the steps laid out there. 
 
 ## Software
 
@@ -15,6 +15,8 @@ You can install git on Debian based Linux by typing the following command into a
 ```bash
 sudo apt install git
 ```
+
+You can install git on macOS by following the instructions [here](https://git-scm.com/download/mac). It is recommended to use homebrew or Apple's XCode CLI tools to install git on macOS.
 
 You can install git on Windows by downloading the installer from [here](https://git-scm.com/download/win).
 
@@ -30,7 +32,7 @@ Each IEEE project will have its own set of teams inside of the GitHub organizati
 
 ### IntelliJ IDEA
 
-IntelliJ Idea is a powerful IDE for Java development. It has many features that make it a great choice for developing programs in Java. We will be using IntelliJ Idea to write all of our Java code. You can download IntelliJ Idea from [here](https://www.jetbrains.com/idea/download/). IntelliJ is nice because it will also take care of your GitHub credentials for you, meaning that you won't have to create a SSH key. 
+IntelliJ Idea is a powerful IDE for Java development. It has many features that make it a great choice for developing programs in Java. We will be using IntelliJ Idea to write all of our Java code. You can download IntelliJ Idea from [here](https://www.jetbrains.com/idea/download/). IntelliJ is nice because it will also take care of your GitHub credentials for you, meaning that you won't have to create a SSH key. IntelliJ has a free community edition that is more than enough for our purposes. You may also apply for a free student license to use the Ultimate edition, but this is not necessary.
 
 If you are planning on using or working on the simulator at all, you will working in IntelliJ as the simulator is a Java program. 
 
@@ -54,7 +56,7 @@ If you are planning on using or working on the simulator at all, you will workin
 
     If you click on the refresh icon on your folder in the `Explorer` you should now see a folder called `Getting-Started-2023`. This is the repository you just cloned. 
 
-6. Generally, we want to set out workspace in VSCode so that our topmost directory in the `Explorer` is the project directory itself. Click on the `File` menu and select `Close Folder`. This will close the folder you have opened in VSCode. Next, click on the `File` menu again and select `Open Folder`. Navigate to the folder of the repository we just cloned and open it up. You should now see the repository `Getting-Started-2023` as the topmost folder in `Explorer`.
+6. Generally, we want to set all workspaces in VSCode so that our topmost directory in the `Explorer` is the project directory itself. Click on the `File` menu and select `Close Folder`. This will close the folder you have opened in VSCode. Next, click on the `File` menu again and select `Open Folder`. Navigate to the folder of the repository we just cloned and open it up. You should now see the repository `Getting-Started-2023` as the topmost folder in `Explorer`.
 
 7. You will now create a new git `branch`. Branching in git is a way to keep different edits to source files in separate places so that people do not have to constantly be writing all of their different changes onto the same files directly. Generally, anytime you are working on a new feature or bug fix, you will want to create a new branch. To create a new branch, type the following command into the terminal:
 
@@ -110,4 +112,4 @@ If you are planning on using or working on the simulator at all, you will workin
 
     This will create a branch on the remote repository with the same name as the branch you created locally.
 
-12. Now, go back to the GitHub page for this repository. You should see a notification that you have created a new branch. Click on the `Compare & pull request` button. This will take you to a page where you can create a pull request. A pull request is a request to merge your branch into the `main` branch. The `main` branch is the default branch for a repository. All repositories for Micromouse will have `branch protection rules` in place. In this context, a branch protection rule prevents someone from forcefully pushing code to the main branch without first undergoing a `pull request`, which is a GitHub feature that allows other members on the project to review your code before it becomes apart of the `main` branch. The `main` branch should only ever contain code that is working. Feature development and bug fixes should always be done in separate branches, and them merged in. You should (almost) __NEVER__ commit or push directly to the main branch unless you are working on a project by yourself. 
+12. Now, go back to the GitHub page for this repository. You should see a notification that you have created a new branch. Click on the `Compare & pull request` button. This will take you to a page where you can create a pull request. A pull request is a request to merge your branch into the `main` branch. The `main` branch is the default branch for a repository. All repositories for Micromouse will have branch protection rules in place. In this context, a branch protection rule prevents someone from forcefully pushing code to the main branch without first undergoing a pull request, which is a GitHub feature that allows other members on the project to review your code before it becomes apart of the `main` branch. The `main` branch should only ever contain code that is working. Feature development and bug fixes should always be done in separate branches, and them merged in. You should (almost) __NEVER__ commit or push directly to the main branch unless you are working on a project by yourself. 
