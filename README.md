@@ -11,7 +11,6 @@ Welcome the University at Buffalo IEEE Micromouse! This repository is a quick wa
 Git is a version control system that allows you to track changes to text files. It is a very powerful tool that is used in industry and is a great skill to have. We will be using git to track changes to our code and to share code with each other.
 
 You can install git on Debian based Linux by typing the following command into a terminal:
-
 ```bash
 sudo apt install git
 ```
@@ -19,7 +18,6 @@ sudo apt install git
 You can install git on macOS by following the instructions [here](https://git-scm.com/download/mac). It is recommended to use homebrew or Apple's XCode CLI tools to install git on macOS.
 
 You can install git on Windows by downloading the installer from [here](https://git-scm.com/download/win). You can also install git on Windows using the following command in a powershell terminal:
-
 ```powershell
  winget install --id Git.Git -e --source winget 
  ```
