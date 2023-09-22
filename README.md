@@ -18,11 +18,15 @@ sudo apt install git
 
 You can install git on macOS by following the instructions [here](https://git-scm.com/download/mac). It is recommended to use homebrew or Apple's XCode CLI tools to install git on macOS.
 
-You can install git on Windows by downloading the installer from [here](https://git-scm.com/download/win).
+You can install git on Windows by downloading the installer from [here](https://git-scm.com/download/win). You can also install git on Windows using the following command in a powershell terminal:
+
+```powershell
+ winget install --id Git.Git -e --source winget 
+ ```
 
 ### Visual Studio Code
 
-Visual Studio Code is a powerful and relatively lightweight text editor. It has many features that make it a great choice for programming. We will be using Visual Studio Code to write anything not in Java. VSCode also has the ability to take care of GitHub credentials so that you can access remote GitHub repositories without needing to create an SSH key. You can download Visual Studio Code from [here](https://code.visualstudio.com/download).
+Visual Studio Code is a powerful and relatively lightweight text editor. It has many features that make it a great choice for programming. We will be using Visual Studio Code to write anything not in Java. VSCode also has the ability to take care of GitHub credentials so that you can access remote GitHub repositories without needing to create an SSH key. You can download Visual Studio Code from [here](https://code.visualstudio.com/download). 
 
 ### GitHub 
 
@@ -40,7 +44,8 @@ If you are planning on using or working on the simulator at all, you will workin
 
 1. Double check that you have git installed. You can do this by typing `git --version` into a terminal. If you get an error, please go back to the software section and install git.
 
-2. Locate or create a directory (a folder) in which you would like to keep you programming projects for IEEE. For example, I keep a directory called `Projects` in my home directory for all of my programming projects. My `Projects` directory contains all of the directories of my individual projects. What you call this directory and where you place it are not that important as long as it is easily accessible.
+2. Locate or create a directory (a folder) in which you would like to keep you programming projects for IEEE. For example, I keep a directory called `Projects` in my home directory for all of my programming projects. My `Projects` directory contains all of the directories of my individual projects. What you call this directory and where you place it are not that important as long as it is easily accessible, with two exceptions: the folder should not be inside a preexisting git repository, and the folder should not be inside a cloud storage folder such as Google Drive, OneDrive, or iCloud. 
+    > Technically it is possible to have a git repository inside of another git repository, but this is generally not a good idea. Nested git repositories can cause issues with tracking changes to files, and are an advanced topic. __Do not__ create a git repository inside of another git repository. If you do, we will not help you. 
 
 3. Open VSCode. Click on the `Explorer` icon and select `Open Folder`. Navigate to the directory you just created and click `Open`. You should now have a workspace open in VScode within that folder. If you click on the `Explorer` menu you should see a directory structure of everything inside of the folder you opened, unless the folder you opened was empty. 
 
@@ -97,6 +102,8 @@ If you are planning on using or working on the simulator at all, you will workin
     ```
 
     with `A message about this commit` being a message about the commit. This message should be short and descriptive. The `-m` flag tells git that the next thing we type will be the commit message. If you did not include the `-m` flag, git would open up a text editor for you to type the commit message in. Oftentimes the default text editor will be a CLI text editor such as `vim` or `nano`. If you are not familiar with these editors, it is best to use the `-m` flag.
+
+    > If this is the first time committing with git on your machine, you may be prompted to enter your name and email. If you are, please do so. Make sure to use the same email that you used to create your GitHub account.
 
     You can use `git status` again to see that the file is now added to the commit.
 
