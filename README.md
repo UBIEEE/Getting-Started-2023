@@ -247,3 +247,18 @@ This is one option for writing code for micro-controllers. You may also use the 
 7. Next, try changing the 1000 in the delay function to a call to the `time_to_milliseconds` function. Experiment with different delays. Upload the program to the board. You should see that the program still works.
 
 8. Try playing around on your own. In the future we will be discussing how to do testing in PlatformIO. 
+
+
+## Using the Simulator
+
+The simulator is a Java program that simulates a micromouse maze. The simulator is a great tool for testing algorithms and for testing the mouse itself. Currently, the simulator supports maze generation with two different algorithms and maze solving with two different algorithms. 
+
+1. Locate the simulator in the UBIEEE GitHub organization. Clone the repository to your local machine.You can do this by going to IntelliJ and selected `Get from VCS` option. You can copy and paste the GitHub url into the `URL` field. You may have to sign into GitHub.
+
+2. Open up the README.md and read through it so that you understand the basic structure. 
+
+3. Open up the project in IntelliJ. You can do this by clicking on the `File` menu and selecting `Open`. Navigate to the directory you cloned the repository to and open it.
+
+4. Run the simulator by generating and solving mazes observe how it functions. 
+
+5. Check out the page [here](https://github.com/orgs/UBIEEE/projects/2). This will take you to the project page. We will discuss the fututre development of the simulator. 
