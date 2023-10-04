@@ -1,8 +1,8 @@
-# Getting Started with IEEE 2023
+# Getting Started with Micromouse 2023
 
 ## Introduction
 
-Welcome the University at Buffalo IEEE Micromouse! This repository is a quick way to help you get started with the Micromouse project. If you have any questions, please reach out to [Eric Butcher](mailto:ericbutc@buffalo.edu). Please first got to the software section and download all the required software there. After you have downloaded the necessary software, please continue to the practicing git section and complete the steps laid out there. 
+Welcome the University at Buffalo IEEE Micromouse! This repository is a quick way to help you get started with the Micromouse project. If you have any questions, please reach out to [Eric Butcher](mailto:ericbutc@buffalo.edu). Please first go to the software section and download all the required software there. After you have downloaded the necessary software, please continue to the practicing git section and complete the steps laid out there. Then you may continue to the PlatformIO section and complete the steps there. Finally, you may continue to the simulator section and complete the steps there.
 
 ## Software
 
@@ -42,7 +42,7 @@ If you are planning on using or working on the simulator at all, you will workin
 
 ### Python
 
-Python is a powerful programming language that is used in many different applications. Python is a powerful tool that we will use to do data analysis. Python is also a dependency forYou can download Python from [here](https://www.python.org/downloads/). Make sure to download Python 3.9.6 or later.
+Python is a powerful programming language that is used in many different applications. Python is a powerful tool that we will use to do data analysis. Python is also a dependency for PlatformIO is you chose to use it for your embedded firmware development. You can download Python from [here](https://www.python.org/downloads/). Make sure to download Python 3.9.6 or later.
 
 
 ### gcc
@@ -75,21 +75,9 @@ xcode-select --install
 ```
 
 Installing gcc through MinGW on Windows:
-1. Download the MinGW Installer:
-        https://sourceforge.net/project/showfiles.php?group_id=2435&package_id=240780
-2. Select Save File when prompted.
-3. Open the downloaded exe.
-4. Click Yes when Windows asks if you want to allow it.
-5. Click Next > on the Welcome screen.
-6. Select Download and Install and click Next >
-7. Read the License Agreement and click I agree
-8. Select Current to install the current MinGW package and click Next >
-9. Check the MinGW base tools and g++ compiler click Next
-10. Destination Folder should be C:\MinGW
-11. Click Next >
-12. Leave the default folder and click Install
-13. When Installation is complete, click Next >
-14. Click Finish
+1. [Download the MinGW Installer](https://sourceforge.net/project/showfiles.php?group_id=2435&package_id=240780)
+2. See [this page](https://linuxhint.com/install-gcc-windows/) for full instructions.
+
 
 
 
@@ -219,7 +207,7 @@ This is one option for writing code for micro-controllers. You may also use the 
     }
     ```
 
-    and this code into metric.h:
+    and this code into `metric.h`:
     ```
     #ifndef _CALCULATOR_H_
     #define _CALCULATOR_H_
@@ -253,12 +241,12 @@ This is one option for writing code for micro-controllers. You may also use the 
 
 The simulator is a Java program that simulates a micromouse maze. The simulator is a great tool for testing algorithms and for testing the mouse itself. Currently, the simulator supports maze generation with two different algorithms and maze solving with two different algorithms. 
 
-1. Locate the simulator in the UBIEEE GitHub organization. Clone the repository to your local machine.You can do this by going to IntelliJ and selected `Get from VCS` option. You can copy and paste the GitHub url into the `URL` field. You may have to sign into GitHub.
+1. Locate the simulator in the UBIEEE GitHub organization. Clone the repository to your local machine. You can do this by going to IntelliJ and selected `Get from VCS` option. You can copy and paste the GitHub url into the `URL` field. You may have to sign into GitHub.
 
 2. Open up the README.md and read through it so that you understand the basic structure. 
 
 3. Open up the project in IntelliJ. You can do this by clicking on the `File` menu and selecting `Open`. Navigate to the directory you cloned the repository to and open it.
 
-4. Run the simulator by generating and solving mazes observe how it functions. 
+4. Run the simulator by generating and solving mazes and observe how it functions. If you receive errors due to missing JUnit as a dependency please follow the guide [here](https://www.jetbrains.com/help/idea/junit.html#intellij) to add JUnit as a dependency.
 
-5. Check out the page [here](https://github.com/orgs/UBIEEE/projects/2). This will take you to the project page. We will discuss the fututre development of the simulator. 
+5. Check out the page [here](https://github.com/orgs/UBIEEE/projects/2). This will take you to the project page. We will discuss the future development of the simulator. 
